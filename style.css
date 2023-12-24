@@ -1,3 +1,4 @@
+/*Nav Bar*/
 nav{
     position: relative;
     top: 0%;
@@ -28,9 +29,17 @@ nav>ul>li{
     font-family: 'Inter Tight', sans-serif;
     font-size: 17px;
     color: white;
+    cursor: pointer;
 }
 
 nav>ul>li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
     background-color: rgb(0, 0, 0);
     margin-left: 100px;
 }
+
+nav>ul>li:nth-child(2):hover #downicon{
+    position: relative;
+    top: 7px;
+}
+
+/*Services*/
