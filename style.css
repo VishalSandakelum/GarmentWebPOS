@@ -16,7 +16,7 @@ nav>ul{
     height: 100%;
     margin: 0%;
     left: 0%;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     padding-left: 3%;
     display: flex;
 }
@@ -24,7 +24,7 @@ nav>ul{
 nav>ul>li{
     position: relative;
     height: fit-content;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     margin-top: 2.5%;
     font-family: 'Inter Tight', sans-serif;
     font-size: 17px;
@@ -32,8 +32,7 @@ nav>ul>li{
     cursor: pointer;
 }
 
-nav>ul>li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
-    background-color: rgb(0, 0, 0);
+nav>ul>li:nth-child(2),nav>ul>li:nth-child(3),nav>ul>li:nth-child(4),nav>ul>li:nth-child(5){
     margin-left: 100px;
 }
 
@@ -42,4 +41,106 @@ nav>ul>li:nth-child(2):hover #downicon{
     top: 7px;
 }
 
+nav>ul>li:hover{
+    font-size: 18px;
+}
+
+/*Nav Bar Right Side*/
+.navbarrightside{
+    position: absolute;
+    width: 30%;
+    height: 55%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+}
+
+.navbarrightside>button:nth-child(4),.navbarrightside>button:nth-child(5){
+    transition: all;
+    transition-duration: 0.5s;
+    background-color: transparent;
+    border: 0px;
+    margin-left: 30px;
+    cursor: pointer;
+    rotate: 1deg;
+}
+
+.navbarrightside>button:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 195px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.navbarrightside>button:nth-child(4):hover{
+    rotate: -45deg;
+}
+
+.navbarrightside>button:nth-child(5):hover{
+    rotate: -150deg;
+}
+
+.navbarrightside>input{
+    position: relative;
+    height: 90%;
+    width: 55%;
+    bottom: 30%;
+    border-radius: 15px;
+    background-color: #F4F4F4;
+    opacity: 50%;
+    border: 0px;
+}
+
+.searchline{
+    position: absolute;
+    border: 1px solid #8E8B8B;
+    width: 40%;
+    top: 70%;
+    left: 5%;
+}
+
 /*Services*/
+
+.ServicesMainDiv>ul{
+    list-style: none;
+    position: relative;
+    padding-left: 0%;
+}
+
+.ServicesMainDiv>ul>li{
+    transition: all;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 17px;
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ServicesMainDiv>ul>li:hover{
+    font-size: 19px;
+}
+
+.ServicesMainDiv>ul>li:nth-child(2),.ServicesMainDiv>ul>li:nth-child(3),.ServicesMainDiv>ul>li:nth-child(4),.ServicesMainDiv>ul>li:nth-child(5){
+    margin-top: 8%;
+}
+
+.ServicesMainDiv{
+    transition: all;
+    transition-duration: 1s;
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    left: 7%;
+    top: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #AD9898;
+    opacity: 68%;
+    display: none;
+}
