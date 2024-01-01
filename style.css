@@ -16,7 +16,7 @@ nav>ul{
     height: 100%;
     margin: 0%;
     left: 0%;
-    /*border: 2px solid black;*/
+    border: 2px solid black;
     padding-left: 3%;
     display: flex;
 }
@@ -24,7 +24,7 @@ nav>ul{
 nav>ul>li{
     position: relative;
     height: fit-content;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     margin-top: 2.5%;
     font-family: 'Inter Tight', sans-serif;
     font-size: 17px;
@@ -143,4 +143,32 @@ nav>ul>li:hover{
     background-color: #AD9898;
     opacity: 68%;
     display: none;
+}
+
+/*------------------------------Media Query For 1024 to 1439 Range (Laptop(normal) Size)------------------------------*/
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    /*Nav Bar*/
+    
+    nav>ul>li{
+        margin-top: 3.5%;
+    }
+
+    nav>ul>li:nth-child(2),nav>ul>li:nth-child(3),nav>ul>li:nth-child(4),nav>ul>li:nth-child(5){
+        margin-left: 54px;
+    }
+
+    /*Nav Bar Right Side*/
+
+    .navbarrightside{
+        width: 28%;
+    }
+
+    .navbarrightside>button:nth-child(3){
+        left: 107px;
+    }
+
+    .navbarrightside>button:nth-child(4),.navbarrightside>button:nth-child(5){
+        margin-left: 1px;
+    }
 }
